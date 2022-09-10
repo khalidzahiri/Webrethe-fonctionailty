@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[ModuleController::class, 'index']);
-Route::get('/modules/{id}',[ModuleController::class, 'show']);
+Route::get('/modules/{id}',[ModuleController::class, 'show'])->whereNumber('id')->name('module.show');
 Route::get('/ajout-de-module',[ModuleController::class, 'ajout']);
