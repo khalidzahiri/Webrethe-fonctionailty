@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('modules', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->boolean('is_active');
+            $table->integer('number_of_data');
+            $table->float('vitesse');
+            $table->float('temperature');
             $table->timestamps();
         });
     }
