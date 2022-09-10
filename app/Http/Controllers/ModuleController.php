@@ -18,8 +18,25 @@ class ModuleController extends Controller
 
     public function show($id)
     {
-        $module = Module::find($id);
+        $module = Module::findOrFail($id);
 
-        return view('module/{$id}');
+        return view('module', [
+            'module' => $module
+        ]);
+    }
+
+    public function create()
+    {
+        return view('form');
+    }
+
+    public function store (Request $request)
+    {
+        $module = new Module();
+        $module->name = $request->name;
+        $module->number_of_data = $request->number_of_data;
+        $module->vitesse = $request->vitesse;
+        $module->temperature = $request->temperature;
+       // $module->save();
     }
 }

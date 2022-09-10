@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[ModuleController::class, 'index']);
-Route::get('/modules/{id}',[ModuleController::class, 'show'])->whereNumber('id')->name('module.show');
-Route::get('/ajout-de-module',[ModuleController::class, 'ajout']);
+Route::get('/',[ModuleController::class, 'index'])->name('welcome');
+Route::post('/modules/create',[ModuleController::class, 'create'])->name('module.create');
+Route::get('/modules/create',[ModuleController::class, 'store'])->name('module.store');
+Route::get('/modules/{id}',[ModuleController::class, 'show'])->name('module.show');
