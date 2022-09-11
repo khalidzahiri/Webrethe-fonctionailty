@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Module extends Model
 {
     use HasFactory;
+    protected $fillable = ['name','number_of_data','vitesse','temperature'];
 }
