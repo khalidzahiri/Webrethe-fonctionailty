@@ -18,7 +18,7 @@
 
             function drawChart() {
                 var data = google.visualization.arrayToDataTable([
-                    ['Year', 'Sales', 'Expenses'],
+                    ['Module', 'number of data', 'Expenses'],
                     ['2004',  1000,      400],
                     ['2005',  1170,      460],
                     ['2006',  660,       1120],
@@ -26,7 +26,7 @@
                 ]);
 
                 var options = {
-                    title: 'Company Performance',
+                    title: 'Modules Performance',
                     curveType: 'function',
                     legend: { position: 'bottom' }
                 };

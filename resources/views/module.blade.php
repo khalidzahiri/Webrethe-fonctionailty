@@ -13,9 +13,9 @@
 
                 var data = new google.visualization.DataTable();
                 data.addColumn('number', 'Day');
-                data.addColumn('number', 'Guardians of the Galaxy');
-                data.addColumn('number', 'The Avengers');
-                data.addColumn('number', 'Transformers: Age of Extinction');
+                data.addColumn('number', 'Number of data');
+                data.addColumn('number', 'Temperature');
+                data.addColumn('number', 'Vitesse');
 
                 data.addRows([
                     [1,  37.8, 80.8, 41.8],
