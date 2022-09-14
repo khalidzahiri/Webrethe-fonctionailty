@@ -40,5 +40,7 @@ class ModuleController extends Controller
             'temperature' => $request->temperature,
         ]);
 
+        return redirect(route("welcome"));
+
     }
 }
