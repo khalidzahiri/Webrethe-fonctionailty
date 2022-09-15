@@ -1,11 +1,11 @@
 @extends('layouts.app')
 @section('content')
     <div class="w-full max-w-sm">
-        <div class="ml-3">
-            <p class="ml-6"> les modules disponible Sont: </p>
+        <div class="w-100 ml-3 m-auto">
+            <p class=""> les modules disponible Sont: </p>
 
             {{-- boucle de recuperation des nom des models dans la base de données--}}
-            <div class=" flex m-auto justify-items-center ml-3">
+            <div class=" flex min-w-0 w-100 justify-items-center justify-between ml-3">
                 @if($modules->count() > 0 )
                     @foreach($modules as $module)
                         <h2><a class=" flex justify-around  m-2 shadow bg-sky-400 hover:bg-blue-500 active:bg-blue-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded transform hover:scale-110 motion-reduce:transform-none" href="{{ route('module.show', ['id'=> $module ->id]) }}">{{ $module->name }}</a></h2>
@@ -17,7 +17,7 @@
         </div>
 
         {{--cntenaire du graphique --}}
-        <div class="m-auto">
+        <div class="m-auto ">
             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
             <script type="text/javascript">
                 google.charts.load('current', {'packages':['corechart']});
