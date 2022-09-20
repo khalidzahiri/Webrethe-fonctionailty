@@ -1,0 +1,606 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/user
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/movies
+    metadata:
+      title: 'Permet de récupérer la liste complète des films.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":1,"name":"Similique cumque voluptas voluptas blanditiis illum.","description":"Velit rerum sit qui accusamus sunt. Nemo et et odit nam voluptates laboriosam. Et deleniti sed voluptatem quaerat magni perferendis. Provident consequuntur quas odit voluptatum ea quaerat delectus. Sit rerum repellat et ut nihil dolorem ipsum.","duration":8034,"release":"1982-07-31","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":20},{"id":2,"name":"Adipisci nostrum commodi.","description":"Vel doloribus sequi qui vel minima. Quia qui delectus suscipit ea iste eius. Et et ut sapiente quis non.","duration":9359,"release":"1991-11-21","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":11},{"id":3,"name":"Quo eum repellendus hic.","description":"Voluptatem reiciendis dolorem expedita error est. Nostrum aliquam sit qui minus ut fuga ut. Quaerat facere voluptate quo distinctio harum similique. Eligendi quidem quia rerum vel autem est.","duration":12849,"release":"1987-05-01","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":15},{"id":4,"name":"Aut ut at.","description":"Aperiam et nesciunt ut voluptatum vitae quo et. Iste qui et corporis voluptas quidem autem. Cumque cum voluptatem id laudantium reiciendis voluptatibus.","duration":3678,"release":"1985-04-30","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":16},{"id":5,"name":"Praesentium architecto provident.","description":"Officia omnis consectetur pariatur ut doloribus. Fugiat aliquid placeat et voluptates atque placeat sequi. Et beatae adipisci minima consequatur. Nisi amet expedita adipisci dolores architecto natus.","duration":6656,"release":"2002-09-29","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":29},{"id":6,"name":"Quia vitae nostrum.","description":"Tempora ipsum nam saepe laudantium dolor corrupti. Qui ut nobis rerum reprehenderit. Repudiandae sed et delectus et laudantium. Ut quasi quo ullam voluptatem a est.","duration":8172,"release":"1983-10-25","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":null},{"id":7,"name":"Aut accusantium aliquid sunt explicabo.","description":"Corporis blanditiis eos magni dolorem sint est. Aspernatur est rerum deserunt iure nobis quis. Error accusantium modi aut optio et.","duration":4863,"release":"1979-10-07","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":16},{"id":8,"name":"Consequatur laboriosam cumque consequatur fugit.","description":"Aut ut rerum corporis et dignissimos ea ut. Est minima cum quia animi minima exercitationem excepturi. Culpa est consectetur ducimus ea magnam consequatur nobis.","duration":14583,"release":"2006-09-26","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":14},{"id":9,"name":"Nemo aut aperiam.","description":"Nisi inventore omnis perspiciatis aut exercitationem. Dolorem inventore nihil ut. Amet omnis expedita temporibus velit molestiae id qui laborum.","duration":1511,"release":"2003-03-14","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":1},{"id":10,"name":"Sapiente quo labore.","description":"Nemo quas omnis deleniti suscipit. Aliquam harum reiciendis velit fuga libero laborum. Eum doloribus sit debitis expedita est. Possimus et tempore quo rem voluptas in unde.","duration":8436,"release":"2014-12-26","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":25},{"id":11,"name":"Et aut non quae cupiditate illum.","description":"Ullam nisi vel sit beatae. Aut aut magnam doloremque exercitationem assumenda. Id vitae qui ipsam enim ad consectetur. Consequatur est aut explicabo dolor est totam et consequatur.","duration":658,"release":"1980-08-20","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":16},{"id":12,"name":"Est ipsa numquam.","description":"Ducimus ipsam provident autem saepe expedita rerum est aspernatur. Voluptates inventore ipsa officia aperiam. Nihil laudantium possimus aliquid.","duration":934,"release":"2004-07-16","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":11},{"id":13,"name":"Sequi esse sed.","description":"Maxime et rem illo quasi blanditiis quia blanditiis. Dolorem dolorem numquam ut similique blanditiis eum. Aliquid odio neque similique voluptatem hic sint. Aut ad illum ut aut sunt qui.","duration":9729,"release":"1985-01-27","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":21},{"id":14,"name":"Nostrum nulla et necessitatibus.","description":"Eum consequatur corrupti reiciendis nihil qui. Optio voluptates dolore aliquid illum voluptatem eveniet.","duration":8360,"release":"1980-07-21","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":13},{"id":15,"name":"Quae est dolores.","description":"Dolor ratione recusandae iure quos. Sequi quaerat exercitationem excepturi consequatur saepe aspernatur. Cupiditate magnam ad cumque et qui a doloribus. Veniam id consequatur quia ut ipsam rerum et.","duration":5398,"release":"2004-04-24","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":14},{"id":16,"name":"Eos sunt quae eius.","description":"Non est voluptatem provident necessitatibus. Facilis sed officia provident. Sapiente nostrum voluptatem tempore iusto sit iusto. Veniam omnis culpa nemo ut velit dolore.","duration":2287,"release":"2021-04-05","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":25},{"id":17,"name":"Culpa sapiente consequatur magnam accusamus nihil.","description":"Accusamus omnis dolor quo repellendus. Vel molestiae magni dolores suscipit asperiores esse. Et ut culpa inventore numquam minus voluptatem id. Ex amet ut adipisci itaque.","duration":9254,"release":"1975-08-30","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":21},{"id":18,"name":"Recusandae ea nihil odio id praesentium.","description":"Rerum ea facilis dolor dolor sint. Quasi eos eos ut. Vel quia suscipit quae minus officiis similique et occaecati. Ea sed dicta in vel aut.","duration":7672,"release":"1980-11-11","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":28},{"id":19,"name":"Eos dolorem et rem illo voluptatem.","description":"In officiis enim nihil mollitia eaque aut autem. Eveniet laboriosam fugit consequatur unde. Culpa non odit ea quis magnam beatae molestiae iste.","duration":13521,"release":"2015-09-02","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":7},{"id":20,"name":"Earum non et.","description":"Facilis perferendis reprehenderit illum eum consequatur id pariatur. Aspernatur in quia quam et. Aut doloribus aut praesentium ratione tempora quis.","duration":13481,"release":"1973-03-31","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":23},{"id":21,"name":"Aut impedit temporibus vel temporibus voluptatibus.","description":"Modi et porro facilis culpa. Quia animi neque et voluptas perferendis. Ea eligendi magni ut in.","duration":14272,"release":"2005-06-03","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":7},{"id":22,"name":"Sapiente soluta ad aut ut expedita.","description":"Fugit placeat eos architecto. Libero minima repellat illum excepturi dolorem. Nisi sed quia ullam officia magnam adipisci.","duration":11863,"release":"1985-03-30","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":28},{"id":23,"name":"Accusamus blanditiis maxime ut et.","description":"Eius eligendi aut quasi vitae modi quaerat commodi. Id suscipit in ut ab similique nihil aut. Non qui corrupti nostrum omnis. Enim nihil quisquam beatae odit.","duration":7951,"release":"1984-05-01","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":2},{"id":24,"name":"Molestiae aliquam voluptas.","description":"Hic omnis recusandae amet modi ea animi aliquid. Dolores eum cumque error consequatur aliquid libero temporibus. Autem animi laboriosam ducimus.","duration":11439,"release":"1994-07-16","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":null},{"id":25,"name":"Accusantium nobis omnis sapiente.","description":"A voluptas quidem impedit consequuntur ad qui voluptas dolores. Quis voluptatibus cum suscipit aut accusantium sit. Voluptates ut enim exercitationem ad minima. Quia quo porro beatae ullam dicta at.","duration":5779,"release":"2018-02-06","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":28},{"id":26,"name":"Eius molestias fuga doloremque est.","description":"Qui dolores qui adipisci minus nemo totam. At accusamus sequi dolorem nihil dolorem. Inventore qui modi quo a. Dolorem ut architecto et maiores hic rem.","duration":12583,"release":"2012-07-12","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":29},{"id":27,"name":"Culpa quidem est voluptate reprehenderit commodi.","description":"Ad maxime beatae quaerat in rem voluptas. Odit ratione delectus atque culpa libero commodi velit assumenda.","duration":11841,"release":"1998-02-23","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":12},{"id":28,"name":"Aut inventore voluptatibus omnis.","description":"Nostrum natus ut est sit. Fuga sit commodi nulla molestias et quia. Provident atque eum non molestiae sed temporibus aut. Ut repudiandae ipsum ut nesciunt. Labore repudiandae repudiandae consequatur magni ipsum.","duration":13788,"release":"1995-06-27","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":28},{"id":29,"name":"Neque quia sunt.","description":"Dolore perferendis consequatur vero placeat eum. Harum autem mollitia velit iusto illum et nulla. In rerum praesentium voluptatem eveniet. Aperiam earum rerum facilis.","duration":4746,"release":"2019-06-29","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":19},{"id":30,"name":"Explicabo quia error.","description":"Voluptas ut reprehenderit fugiat earum. Alias harum sed nisi ullam. Itaque iure quisquam qui illo.","duration":10272,"release":"2002-08-06","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":19},{"id":31,"name":"Ut aliquid dignissimos ut aut.","description":"Error nisi optio ipsam minima aut. Et ducimus odit voluptas qui et. Nisi quis adipisci pariatur eos sint. Eum officia id qui ducimus id.","duration":2506,"release":"1972-01-19","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":26},{"id":32,"name":"Dolor suscipit animi natus.","description":"Eos nulla reprehenderit ea. Ut autem ad eum ipsum iure et pariatur. Est laudantium voluptas ea beatae.","duration":11500,"release":"2018-09-13","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":12},{"id":33,"name":"Consequatur sed est doloribus et aperiam.","description":"Odit dolores facere quis error. Laborum cupiditate repellendus nesciunt libero dolores corrupti enim. Unde magni optio nostrum fugiat nihil praesentium culpa.","duration":9230,"release":"2011-06-22","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":19},{"id":34,"name":"Debitis dolorum aliquid cum minima.","description":"Amet repellat dolorem vitae. Ut error repudiandae debitis distinctio corporis. Quia a architecto aut sapiente consequatur doloribus consectetur.","duration":8423,"release":"2013-07-16","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":15},{"id":35,"name":"Impedit autem qui amet eveniet.","description":"Repellendus dolore quod veritatis quod ipsam eum. Similique voluptas impedit nihil corrupti vel consequatur rerum maxime. Tempora in est atque non veritatis quaerat.","duration":5487,"release":"1989-12-18","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":6},{"id":36,"name":"Doloribus laborum ut molestiae vel nulla.","description":"Quisquam vitae modi odio qui. Ratione molestiae voluptatem et nesciunt. Omnis exercitationem commodi officia.","duration":14858,"release":"2010-06-16","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":1},{"id":37,"name":"Et magnam maiores illum.","description":"Consequatur dolore vel quisquam. Necessitatibus voluptatem et dolor aut molestiae sed. Numquam consequatur autem et earum voluptatem adipisci.","duration":7453,"release":"2002-02-17","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":27},{"id":38,"name":"Qui sed quis perspiciatis nam ipsa.","description":"Aut voluptas eaque velit voluptatibus optio exercitationem quidem. Excepturi facere molestiae magni optio. Similique consequatur dolor officia in. Quis consectetur nemo dignissimos aliquid a odit alias.","duration":11675,"release":"1990-01-25","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":20},{"id":39,"name":"Ut omnis mollitia praesentium.","description":"Dolores recusandae modi ea. Facilis alias nam est animi delectus saepe placeat nobis. Molestiae qui labore ad expedita qui aperiam. Sequi ex repellendus odio maiores ipsa sunt.","duration":5690,"release":"1990-09-27","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":15},{"id":40,"name":"Rerum eveniet ut maiores.","description":"Voluptates et rerum aut iusto. Architecto id eos quo natus laboriosam. Ad officia quis corporis tempore quas dolor commodi qui.","duration":6323,"release":"1999-12-25","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":26},{"id":41,"name":"Dolore nam non ut fugit.","description":"Minus sunt fugit nesciunt amet veniam cumque itaque labore. Doloremque beatae reprehenderit eveniet quia nostrum. Voluptatem ipsum et asperiores officiis et illo nobis possimus.","duration":9552,"release":"1974-01-18","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":3},{"id":42,"name":"Tenetur vero fugit sed.","description":"Quaerat natus praesentium illum expedita. Excepturi quasi repellendus accusantium id praesentium suscipit atque voluptas. Veritatis dolorum quod quis qui dignissimos in.","duration":10386,"release":"1981-09-21","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":10},{"id":43,"name":"Et maiores totam.","description":"Sunt voluptas quam at quis ratione. Qui perferendis possimus assumenda nobis dolores molestias. Qui odio praesentium sed iure iusto ut.","duration":928,"release":"1996-04-19","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":26},{"id":44,"name":"Porro at sapiente.","description":"Ducimus dolorem deserunt saepe quo necessitatibus. Veniam magni culpa neque. Dolorem rem perspiciatis maiores dicta. Ut qui vel error voluptatem enim ipsa.","duration":7208,"release":"2008-01-04","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":5},{"id":45,"name":"Dicta quas aspernatur.","description":"Quia reiciendis blanditiis voluptatibus qui nesciunt itaque. Vitae aut totam dolorem voluptatibus vitae illum amet qui. Dolorem voluptatem veritatis quidem sit. Voluptas quae quaerat rerum fuga.","duration":4930,"release":"2021-12-04","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":5},{"id":46,"name":"At blanditiis minus.","description":"Nihil quidem totam cum sit dicta earum doloribus. Et et id debitis dolor dolore temporibus illo ullam. Expedita eum fugiat est et. Quae suscipit et cum illo ducimus dicta tempore.","duration":11090,"release":"1999-11-18","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":13},{"id":47,"name":"Reprehenderit quia qui sint.","description":"Repellat repudiandae itaque qui provident est praesentium. Quod in qui quasi ea sit eum nemo.","duration":754,"release":"2022-02-12","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":2},{"id":48,"name":"Quia architecto ratione nihil quos.","description":"Sequi molestiae maiores in aut incidunt unde optio. Et modi quas ex error rerum fugiat repellat. Nostrum quia incidunt laboriosam mollitia accusamus nulla.","duration":5997,"release":"1974-07-06","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":14},{"id":49,"name":"Asperiores aliquam quae et id.","description":"Delectus delectus veniam doloremque quae molestiae repellendus dignissimos pariatur. Alias nihil eos eveniet voluptatem. Aspernatur labore vitae eum sequi velit occaecati.","duration":3836,"release":"1985-07-24","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":16},{"id":50,"name":"Quidem error nihil ipsa atque.","description":"Voluptates hic distinctio consequatur voluptas. Quia magnam dolor amet et esse quisquam. Tempore et natus excepturi dolorem nemo et aut accusantium.","duration":406,"release":"1978-07-17","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":26},{"id":51,"name":"Harry Potter \u00e0 l''\u00e9cole des sorciers","description":"Orphelin, Harry Potter a \u00e9t\u00e9 recueilli \u00e0 contrec\u0153ur par son oncle Vernon et sa tante P\u00e9tunia, aussi cruels que mesquins, qui n''h\u00e9sitent pas \u00e0 le faire dormir dans le placard sous l''escalier.","duration":9120,"release":"2001-12-05","created_at":"2022-07-22T08:55:31.000000Z","updated_at":"2022-07-22T08:55:31.000000Z","director_id":8},{"id":52,"name":"Harry Potter \u00e0 l''\u00e9cole des sorciers","description":"Orphelin, Harry Potter a \u00e9t\u00e9 recueilli \u00e0 contrec\u0153ur par son oncle Vernon et sa tante P\u00e9tunia, aussi cruels que mesquins, qui n''h\u00e9sitent pas \u00e0 le faire dormir dans le placard sous l''escalier.","duration":9120,"release":"2001-12-05","created_at":"2022-07-22T08:59:50.000000Z","updated_at":"2022-07-22T08:59:50.000000Z","director_id":8},{"id":53,"name":"Harry Potter \u00e0 l''\u00e9cole des sorciers","description":"Orphelin, Harry Potter a \u00e9t\u00e9 recueilli \u00e0 contrec\u0153ur par son oncle Vernon et sa tante P\u00e9tunia, aussi cruels que mesquins, qui n''h\u00e9sitent pas \u00e0 le faire dormir dans le placard sous l''escalier.","duration":9120,"release":"2001-12-05","created_at":"2022-07-22T08:59:52.000000Z","updated_at":"2022-07-22T08:59:52.000000Z","director_id":8},{"id":54,"name":"Harry Potter \u00e0 l''\u00e9cole des sorciers","description":"Orphelin, Harry Potter a \u00e9t\u00e9 recueilli \u00e0 contrec\u0153ur par son oncle Vernon et sa tante P\u00e9tunia, aussi cruels que mesquins, qui n''h\u00e9sitent pas \u00e0 le faire dormir dans le placard sous l''escalier.","duration":9120,"release":"2001-12-05","created_at":"2022-07-22T08:59:55.000000Z","updated_at":"2022-07-22T08:59:55.000000Z","director_id":8},{"id":55,"name":"Harry Potter \u00e0 l''\u00e9cole des sorciers","description":"Orphelin, Harry Potter a \u00e9t\u00e9 recueilli \u00e0 contrec\u0153ur par son oncle Vernon et sa tante P\u00e9tunia, aussi cruels que mesquins, qui n''h\u00e9sitent pas \u00e0 le faire dormir dans le placard sous l''escalier.","duration":9120,"release":"2001-12-05","created_at":"2022-07-22T08:59:55.000000Z","updated_at":"2022-07-22T08:59:55.000000Z","director_id":8},{"id":56,"name":"Harry Potter \u00e0 l''\u00e9cole des sorciers","description":"Orphelin, Harry Potter a \u00e9t\u00e9 recueilli \u00e0 contrec\u0153ur par son oncle Vernon et sa tante P\u00e9tunia, aussi cruels que mesquins, qui n''h\u00e9sitent pas \u00e0 le faire dormir dans le placard sous l''escalier.","duration":9120,"release":"2001-12-05","created_at":"2022-07-22T08:59:56.000000Z","updated_at":"2022-07-22T08:59:56.000000Z","director_id":8}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/movies
+    metadata:
+      title: "Permet d'enregistrer un nouveau film."
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Le texte de value ne peut pas contenir plus de 255 caractères.'
+        required: true
+        example: gktcdiulxuwbfjjryywhikpvhekxhbrghtuthlkxjqvnmccxpncwupylroavfiizzapfqtpmdhnlprf
+        type: string
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: true
+        example: deleniti
+        type: string
+        custom: []
+      duration:
+        name: duration
+        description: 'La valeur de value doit être comprise entre 0 et 18000.'
+        required: true
+        example: 14228
+        type: integer
+        custom: []
+      release:
+        name: release
+        description: "5 heures max. Le champ value n'est pas une date valide."
+        required: true
+        example: '2022-07-22T14:20:07'
+        type: string
+        custom: []
+      director_id:
+        name: director_id
+        description: ''
+        required: false
+        example: 16
+        type: integer
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/movies/{id}'
+    metadata:
+      title: 'Permet de récupérer un film.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the movie.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"id":1,"name":"Similique cumque voluptas voluptas blanditiis illum.","description":"Velit rerum sit qui accusamus sunt. Nemo et et odit nam voluptates laboriosam. Et deleniti sed voluptatem quaerat magni perferendis. Provident consequuntur quas odit voluptatum ea quaerat delectus. Sit rerum repellat et ut nihil dolorem ipsum.","duration":8034,"release":"1982-07-31","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","director_id":20}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/movies/{id}'
+    metadata:
+      title: 'Permet de mettre à jour un film.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the movie.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Le texte de value ne peut pas contenir plus de 255 caractères.'
+        required: false
+        example: ovukniuerzlqkbenxmickbccdqqhqjlphjnmcbnahflpauheijwpdcwhvwmgewefdxmtpphwoyzljywbellmebpwxxykxwreorviogywavinuylvgalqljoujzmkwarcnpfguowrzhdyrknojbsahqjhvsjbfqvyclkrjtfqp
+        type: string
+        custom: []
+      description:
+        name: description
+        description: ''
+        required: false
+        example: repellat
+        type: string
+        custom: []
+      duration:
+        name: duration
+        description: 'La valeur de value doit être comprise entre 0 et 18000.'
+        required: false
+        example: 10101
+        type: integer
+        custom: []
+      release:
+        name: release
+        description: "5 heures max. Le champ value n'est pas une date valide."
+        required: false
+        example: '2022-07-22T14:20:07'
+        type: string
+        custom: []
+      director_id:
+        name: director_id
+        description: ''
+        required: false
+        example: 5
+        type: integer
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/movies/{id}'
+    metadata:
+      title: 'Permet de supprimer un film.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the movie.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/actors
+    metadata:
+      title: 'Permet de récupérer la liste complète des acteurs.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":1,"name":"Philippe Le Noel","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":2,"name":"\u00c9mile-\u00c9ric Chevalier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":3,"name":"Chantal Faivre","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":4,"name":"Sabine Letellier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":5,"name":"In\u00e8s Hardy","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":6,"name":"Lucy-Chantal Pottier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":7,"name":"Jules Colas","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":8,"name":"Catherine Marchal","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":9,"name":"Aim\u00e9 Lacombe","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":10,"name":"Isabelle du Laroche","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":11,"name":"Luc de la Mahe","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":12,"name":"Oc\u00e9ane Jacob","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":13,"name":"Louise Ramos","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":14,"name":"Marie Remy","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":15,"name":"Martin Roger","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":16,"name":"Patrick Boulanger","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":17,"name":"Sabine Leroux","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":18,"name":"St\u00e9phanie Texier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":19,"name":"Agn\u00e8s Boucher","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":20,"name":"Roland de la Pires","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":21,"name":"Christiane Jacques-Bouvier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":22,"name":"Gilbert Blanc","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":23,"name":"Fran\u00e7oise Weber","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":24,"name":"Raymond Barre","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":25,"name":"Bernard Picard","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":26,"name":"Audrey Leblanc","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":27,"name":"Yves Royer","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":28,"name":"William Lemaitre","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":29,"name":"Jacqueline-Nicole Peron","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":30,"name":"Alexandre du Le Goff","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":31,"name":"No\u00e9mi Diaz","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":32,"name":"C\u00e9line Laurent","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":33,"name":"Richard Pichon","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":34,"name":"\u00c9ric du Thomas","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":35,"name":"Roland Garnier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":36,"name":"Lucy de Foucher","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":37,"name":"Guy de Dupuy","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":38,"name":"Xavier Parent","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":39,"name":"Aur\u00e9lie Pires-Hubert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":40,"name":"Marine Benoit","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":41,"name":"Dominique Renault","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":42,"name":"Thierry Traore","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":43,"name":"\u00c9lodie Martin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":44,"name":"Victoire Sauvage-Lejeune","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":45,"name":"Luc Pichon","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":46,"name":"Aur\u00e9lie Lebreton","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":47,"name":"Joseph Lefevre","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":48,"name":"Pauline de Guilbert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":49,"name":"Nicolas Hoarau","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":50,"name":"Marthe Mary-Garcia","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":51,"name":"Maggie Boutin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":52,"name":"Diane Lelievre-Mallet","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":53,"name":"Dominique Begue-Vincent","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":54,"name":"Pauline Guerin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":55,"name":"Fr\u00e9d\u00e9ric-David Boulay","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":56,"name":"Gr\u00e9goire Marchand","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":57,"name":"Antoine Peltier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":58,"name":"Th\u00e9ophile Paul","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":59,"name":"Georges Ledoux","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":60,"name":"Susanne Buisson","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":61,"name":"Val\u00e9rie Guyon-Dubois","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":62,"name":"In\u00e8s Durand","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":63,"name":"No\u00e9mi Loiseau","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":64,"name":"G\u00e9rard Humbert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":65,"name":"Am\u00e9lie-Jacqueline Chauveau","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":66,"name":"Thibaut-Jean Teixeira","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":67,"name":"Isaac Vallet","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":68,"name":"David-L\u00e9on Lejeune","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":69,"name":"Cl\u00e9mence Morin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":70,"name":"Henri Lemaire","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":71,"name":"\u00c9mile du Aubert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":72,"name":"Claude Dupont","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":73,"name":"\u00c9douard-S\u00e9bastien Delahaye","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":74,"name":"G\u00e9rard Le Gimenez","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":75,"name":"Raymond-Beno\u00eet Bonnet","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":76,"name":"Nathalie Devaux-Moreau","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":77,"name":"C\u00e9line Guillet","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":78,"name":"In\u00e8s Potier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":79,"name":"\u00c9douard Lelievre","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":80,"name":"Fr\u00e9d\u00e9ric-Alain Collet","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":81,"name":"Claude Rousset","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":82,"name":"Lorraine-Henriette Riviere","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":83,"name":"Marthe de la Turpin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":84,"name":"Marguerite Lejeune","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":85,"name":"Henriette-Chantal Devaux","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":86,"name":"Adrienne-Victoire Garnier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":87,"name":"Adrien Clerc-Gosselin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":88,"name":"Pierre Schmitt-Hebert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":89,"name":"Claude Albert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":90,"name":"Suzanne Munoz","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":91,"name":"Olivier de la Gay","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":92,"name":"Luce de la Jacques","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":93,"name":"Victor Lemaire","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":94,"name":"\u00c9lisabeth Allain","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":95,"name":"Bertrand Bodin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":96,"name":"Alfred-\u00c9tienne Delaunay","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":97,"name":"Doroth\u00e9e Boucher","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":98,"name":"Marine Mathieu","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":99,"name":"Eug\u00e8ne Leleu","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":101,"name":"Emma Watson","created_at":"2022-07-22T11:15:59.000000Z","updated_at":"2022-07-22T11:24:29.000000Z"}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/actors
+    metadata:
+      title: "Permet d'enregistrer un nouvel acteur."
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Le texte de value ne peut pas contenir plus de 255 caractères.'
+        required: true
+        example: cqyubhmfjehzyhpevvzzkceyvialxiugnifnoybykkyxqnsadurspduxwoistuprueblsypwddafbizhdarmyanaomqjswpgtracbjmbpiijzgeqdqwpharqwrkyogvbzsw
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/actors/{id}'
+    metadata:
+      title: 'Permet de récupérer un acteur.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the actor.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"id":1,"name":"Philippe Le Noel","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/actors/{id}'
+    metadata:
+      title: 'Permet de mettre à jour un acteur.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the actor.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Le texte de value ne peut pas contenir plus de 255 caractères.'
+        required: false
+        example: zanfcvjllnafkjrdorqgxqxjuakphxmmvhiuoicphlzmzdskobvrystdauzmyvkxhfsywlvuvoahjawdpibtdtwmonkidyghdthcvjtgfdigqgypurqdqvoqvdwheehs
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/actors/{id}'
+    metadata:
+      title: 'Permet de supprimer un acteur.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the actor.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/directors
+    metadata:
+      title: 'Permet de récupérer la liste complète des réalisateurs.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":1,"name":"Juliette Morel","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":2,"name":"Alphonse Chauvet","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":3,"name":"Alphonse-Alain Gaillard","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":4,"name":"\u00c9milie Chevallier-Blin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":5,"name":"Doroth\u00e9e Dupuis","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":6,"name":"Gilles-Alfred Caron","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":7,"name":"Suzanne Verdier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":8,"name":"Luce Pierre","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":9,"name":"Margaret du Benard","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":10,"name":"Alain Renault","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":11,"name":"\u00c9douard-Pierre Leveque","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":12,"name":"Richard Da Costa","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":13,"name":"Yves-Th\u00e9ophile Blot","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":14,"name":"Laurent-\u00c9douard Verdier","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":15,"name":"Yves de Moreno","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":16,"name":"Margot du Brunet","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":17,"name":"C\u00e9cile de la Coste","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":18,"name":"\u00c9dith Ferreira","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":19,"name":"\u00c9ric-Christophe Francois","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":20,"name":"Lucas Lambert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":21,"name":"Honor\u00e9 de Lopes","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":22,"name":"Aur\u00e9lie Alexandre-Mary","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":23,"name":"Oc\u00e9ane Richard","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":24,"name":"Sylvie Dias","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":25,"name":"Lorraine Voisin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":26,"name":"Astrid de la Benoit","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":27,"name":"Augustin Joubert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":28,"name":"Claire Fontaine","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":29,"name":"Antoinette Didier-Dupont","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"},{"id":31,"name":"Chris Colombus","created_at":"2022-07-22T11:35:17.000000Z","updated_at":"2022-07-22T11:35:33.000000Z"}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '55'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/directors
+    metadata:
+      title: "Permet d'enregistrer un nouveau réalisateur."
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Le texte de value ne peut pas contenir plus de 255 caractères.'
+        required: true
+        example: zssouietbpaoqslewypimdkfpqorslldrvicrkopomiecrpybqhcwzourytgufjtyagdc
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/directors/{id}'
+    metadata:
+      title: 'Permet de récupérer un réalisateur.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the director.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"id":1,"name":"Juliette Morel","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/directors/{id}'
+    metadata:
+      title: 'Permet de mettre à jour un réalisateur.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the director.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Le texte de value ne peut pas contenir plus de 255 caractères.'
+        required: false
+        example: dpmydqjlbpjmjemwytrbfhlnqngirsscsgdcuyrupqovicrbycdaqpatavmdciozwlvdafbusxrqxtpyiqgiovjasswazafgvfxgmduppkrmjyzohnbanazdqvqigviljktjz
+        type: string
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/directors/{id}'
+    metadata:
+      title: 'Permet de supprimer un réalisateur.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the director.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/movies/{movie_id}/actors'
+    metadata:
+      title: 'Permet de récupérer les acteurs liés à un film.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      movie_id:
+        name: movie_id
+        description: 'The ID of the movie.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":8,"name":"Catherine Marchal","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":8}},{"id":10,"name":"Isabelle du Laroche","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":10}},{"id":12,"name":"Oc\u00e9ane Jacob","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":12}},{"id":31,"name":"No\u00e9mi Diaz","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":31}},{"id":39,"name":"Aur\u00e9lie Pires-Hubert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":39}},{"id":44,"name":"Victoire Sauvage-Lejeune","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":44}},{"id":54,"name":"Pauline Guerin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":54}},{"id":55,"name":"Fr\u00e9d\u00e9ric-David Boulay","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":55}},{"id":76,"name":"Nathalie Devaux-Moreau","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":76}},{"id":87,"name":"Adrien Clerc-Gosselin","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z","pivot":{"movie_id":1,"actor_id":87}}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '53'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/movies/{movie_id}/actors'
+    metadata:
+      title: "Permet d'associer un acteur à un film"
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      movie_id:
+        name: movie_id
+        description: 'The ID of the movie.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      actor_id:
+        name: actor_id
+        description: ''
+        required: true
+        example: 10
+        type: integer
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/movies/{movie_id}/director'
+    metadata:
+      title: 'Permet de récupérer le réalisateur lié à un film.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      movie_id:
+        name: movie_id
+        description: 'The ID of the movie.'
+        required: true
+        example: 1
+        type: integer
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"id":20,"name":"Lucas Lambert","created_at":"2022-07-21T17:37:27.000000Z","updated_at":"2022-07-21T17:37:27.000000Z"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '52'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
