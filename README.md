@@ -1,134 +1,64 @@
-# Laravel Docker
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
----
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## Les commandes pour faire fonctionner ce docker-compose
+## About Laravel
 
-> **_Optionnel : Créez un répertoire pgsql_**
->
-> **_Si les ports 80, et 5432 sont busy sur vos machines, au choix vous pouvez bindez d'autres ports dans les fichiers `docker-compose`, ou stopper les services de votre hôte._**
->
-> **_Si on change les ports dans le docker compose, ne pas oublier de re compiler l'image_**
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-### Pour le développement
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-On build les images :
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-- `docker compose build apachephp`
-- `docker compose build pgsql`
-- `docker compose build artisan`
-- `docker compose build composer`
+## Learning Laravel
 
-On exécute le conteneur `apachephp`:
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-- `docker compose up apachephp`
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-le service `apachephp` dépend du service pgsql, ce service sera builder et démarrera avant `apachephp`.
+## Laravel Sponsors
 
-On a accès au site sur <http://localhost>. A ce stade, on devrait avoir une page 403 apache.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Création du projet laravel
+### Premium Partners
 
-Créer un projet laravel avec composer :
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-`docker compose run --rm --user $(id -u):$(id -g) composer create-project laravel/laravel .`
+## Contributing
 
-> Sur linux et windows WSL, le flag `--user $(id -u):$(id -g)` est nécessaire pour obtenir les permissions de fichiers correctes, sur mac il semble que ce ne soit pas nécessaire. Il faut quand même rester vigilant, parfois le user et group des fichiers est root et le fichier n'a pas le flag -w. Il faudra donc rectifier le tir avec ces commandes : `sudo chown USER:GROUP /chemin/fichier && chmod o+w /chemin/fichier`
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-Cette commande créera un projet laravel dans le répertoire `src`.
+## Code of Conduct
 
-**ou **
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-`git clone <URL> src`
+## Security Vulnerabilities
 
-Cette commande clonera un projet dans le répertoire `src`.
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
----
+## License
 
-A ce stade on a une nouvelle erreur, il manque le flag `w` au fichier `storage/logs/laravel.log` :
-
-`chmod o+w src/storage/logs/laravel.log`
-
-Enfin si on rencontre une erreur pour écrire dans le fichier de session :
-
-`chmod -R o+w src/storage/framework/`
-
-Modifiez les variables dans le fichier `.env` :
-
-```env
-DB_CONNECTION=pgsql
-DB_HOST=pgsql
-DB_PORT=5432
-DB_DATABASE=laravel
-DB_USERNAME=laravel
-DB_PASSWORD=secret
-```
-
-#### Exemples de commandes
-
-Créer un fichier avec artisan :
-
-`dpcker compose run --rm --user $(id -u):$(id -g) artisan make:model Post -mc`, cette commande créée un Model Post avec une migration et un contrôleur.
-
-La création d'alias dans `~/.bashrc` est recommandée.
-
-```bash
-alias artisan='docker compose run --rm --user $(id -u):$(id -g) artisan'
-alias docomposer='docker compose run --rm --user $(id -u):$(id -g) composer'
-alias donpm='docker compose run --rm npm'
-```
-
-Ensuite on se sert de ces commandes dans le répertoire ou se situe les fichiers `docker-compose`:
-
-```bash
-docomposer require stripe/stripe-php
-docomposer require --dev phpunit/phpunit
-artisan make:model Article
-```
-
-### Front-End
-
-Dans le répertoire des fichiers `docker-compose`, tapez ces commandes :
-
-```bash
-donpm install
-donpm run watch
-```
-
-Dans le fichier `src/welcome.blade.php`, Ajoutez ces lignes aux endroits adéquats:
-
-```html
-<link rel="stylesheet" href="{{ asset('css/app.css') }}" />
-
-<script src="{{ asset('js/app.js') }}"></script>
-```
-
-Vous pouvez maintenant codé dans les fichiers `resources/js/app.js` et `resources/css/app.css` ils seront recompilées à chaque modification.
-
-### La BDD
-
-Si vous voulez vous servir d'adminer pour gérer la BDD :
-
-`docker compose run --rm -p 8080:8080 adminer`
-
-Sélectionner Système => PostgreSQL et Serveur => pgsql ou le nom de votre conteneur qui fait tourner postgres, entrez les infos de connexion et c'est tout.
-
-### Tinker
-
-La commande pour laravel tinker :
-
-`docker compose run --rm artisan tinker`
-
-Ou si vous avez fait un alias :
-
-`artisan tinker`
-
-Ensuite c'est pareil, c'est toujours tinker :
-
-```php
-User::create([
-    'name' => 'John',
-    'email' => 'john@oclock.io',
-    'password' => Hash::make('password')
-]);
-```
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
